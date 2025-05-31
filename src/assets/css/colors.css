@@ -1,6 +1,6 @@
 html {
     /* --------background colors---------- */
-    --r-brand--bg: #6366f1;
+    --r-brand--bg: #4f39f6;
     --r-brand-sec--bg: #6366f1;
     --r-brand-tonal--bg: #e0e7ff;
     --r-secondary--bg: #eef2ff;
@@ -13,4 +13,7 @@ html {
     --r-primary--txt: #ffffff;
     --r-secondary--txt: #1f2937;
     --r-tertiary--txt: #ffffff;
+
+    /* --------border colors---------- */
+    --r-tertiary--brd: #E9EBEE;
 }

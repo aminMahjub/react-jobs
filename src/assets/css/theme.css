@@ -13,4 +13,7 @@
     --color-primary--txt: var(--r-primary--txt);
     --color-secondary--txt: var(--r-secondary--txt);
     --color-tertiary--txt: var(--r-tertiary--txt);
+
+    /* --------border colors---------- */
+    --color-tertiary--brd: var(--r-tertiary--brd);
 }

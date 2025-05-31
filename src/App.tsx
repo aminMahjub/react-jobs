@@ -1,5 +1,17 @@
+import Header from "./components/app/layout/Header.tsx";
+import HeroSection from "./components/app/HeroSection.tsx";
+import StackCards from "./components/app/StackCards.tsx";
+import JobSection from "./components/app/JobSection.tsx";
+
 function App() {
-    return <h2 className="text-xl bg-error--txt">hi this is a amin</h2>
+    return (
+        <>
+            <Header />
+            <HeroSection />
+            <StackCards />
+            <JobSection />
+        </>
+    )
 }
 
 export default App
