@@ -1,0 +1,16 @@
+html {
+    /* --------background colors---------- */
+    --r-brand--bg: #6366f1;
+    --r-brand-sec--bg: #6366f1;
+    --r-brand-tonal--bg: #e0e7ff;
+    --r-secondary--bg: #eef2ff;
+    --r-background--bg: #ffffff;
+    --r-raised--bg: #000000;
+
+    /* --------text colors---------- */
+    --r-brand--txt: #4f46e5;
+    --r-error--txt: #ef4444;
+    --r-primary--txt: #ffffff;
+    --r-secondary--txt: #1f2937;
+    --r-tertiary--txt: #ffffff;
+}

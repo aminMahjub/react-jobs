@@ -1,0 +1,16 @@
+@theme {
+    /* --------background colors---------- */
+    --color-brand--bg: var(--r-brand--bg);
+    --color-brand-sec--bg: var(--r-brand-sec--bg);
+    --color-brand-tonal--bg: var(--r-brand-tonal--bg);
+    --color-secondary--bg: var(--r-secondary--bg);
+    --color-background--bg: var(--r-background--bg);
+    --color-raised--bg: var(--r-raised--bg);
+
+    /* --------text colors---------- */
+    --color-brand--txt: var(--r-brand--txt);
+    --color-error--txt: var(--r-error--txt);
+    --color-primary--txt: var(--r-primary--txt);
+    --color-secondary--txt: var(--r-secondary--txt);
+    --color-tertiary--txt: var(--r-tertiary--txt);
+}
