@@ -1,17 +1,21 @@
-import Header from "./components/app/layout/Header.tsx";
-import HeroSection from "./components/app/HeroSection.tsx";
-import StackCards from "./components/app/StackCards.tsx";
-import JobSection from "./components/app/JobSection.tsx";
+import { createBrowserRouter,
+    RouterProvider,
+    createRoutesFromElements, 
+    Route
+} from "react-router-dom"
+import MainLayout from "./layouts/MainLayout"
+import HomePage from "./pages/home"
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path="/" element={<MainLayout />}>
+            <Route index element={ <HomePage /> } />
+        </Route>
+    )
+)
 
 function App() {
-    return (
-        <>
-            <Header />
-            <HeroSection />
-            <StackCards />
-            <JobSection />
-        </>
-    )
+    return <RouterProvider router={router} />
 }
 
 export default App

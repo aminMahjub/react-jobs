@@ -1,9 +1,9 @@
 import JobCard from "./JobCard.tsx";
 import data from '../../../db.json'
-import type {JobItem} from "../../types/type.ts";
+import type { JobItem } from "../../types/type.ts";
 
 const JobSection = () => {
-    const jobs = data.jobs
+    const recentJobs = data.jobs.slice(0, 3)
 
     return (
         <section className="bg-blue-50 px-4 py-10">
@@ -13,7 +13,7 @@ const JobSection = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {jobs.map((job) => (
+                    {recentJobs.map((job) => (
                         <JobCard job={job as JobItem} key={job.id} />
                     ))}
                 </div>

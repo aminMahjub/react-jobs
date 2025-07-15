@@ -13,6 +13,7 @@ html {
     --r-primary--txt: #ffffff;
     --r-secondary--txt: #1f2937;
     --r-tertiary--txt: #ffffff;
+    --r-raised--txt: #0000;
 
     /* --------border colors---------- */
     --r-tertiary--brd: #E9EBEE;

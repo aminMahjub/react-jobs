@@ -1,11 +1,26 @@
-import Button from "../ui-kit/Button.tsx";
 import type { JobItem } from "../../types/type.ts";
+import { useState } from "react";
+import { FaMapMarker } from "react-icons/fa"
+
+import Button from "../ui-kit/Button.tsx";
 
 interface JobCardProps {
     job: JobItem;
 }
 
 const JobCard = ({ job }: JobCardProps) => {
+    const [showMore, setShowMore] = useState(false)
+
+    const showMoreButtonText = showMore ? 'show less' : 'show more'
+
+    const slicedDescription = (text: string) => {
+        if (!showMore) {
+            return text.slice(0, 90) + '...'
+        }
+
+        return text
+    }
+
     return (
         <div className="bg-background--bg rounded-xl shadow-md relative">
             <div className="p-4">
@@ -15,7 +30,8 @@ const JobCard = ({ job }: JobCardProps) => {
                 </div>
 
                 <div className="mb-5">
-                    {job.description}
+                    { slicedDescription(job.description) }
+                    <Button content={showMoreButtonText} contentClass="!px-1" variant="text" click={() => setShowMore(!showMore)} />
                 </div>
 
                 <h3 className="text-brand--txt mb-2">{job.salary} / Year</h3>
@@ -23,8 +39,9 @@ const JobCard = ({ job }: JobCardProps) => {
                 <div className="border border-tertiary--brd mb-5"></div>
 
                 <div className="flex flex-col lg:flex-row justify-between mb-4">
-                    <div className="text-error--txt mb-3">
-                        <i className="fa-solid fa-location-dot text-lg"></i>
+                    <div className="text-error--txt flex items-center gap-x-1 mb-3">
+                        <FaMapMarker className="text-lg" />
+
                         {job.location}
                     </div>
 
