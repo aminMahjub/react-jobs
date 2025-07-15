@@ -6,6 +6,7 @@
     --color-secondary--bg: var(--r-secondary--bg);
     --color-background--bg: var(--r-background--bg);
     --color-raised--bg: var(--r-raised--bg);
+    --color-warning--bg: var(--r-warning--bg);
 
     /* --------text colors---------- */
     --color-brand--txt: var(--r-brand--txt);

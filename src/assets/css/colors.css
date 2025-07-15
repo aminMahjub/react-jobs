@@ -6,6 +6,7 @@ html {
     --r-secondary--bg: #eef2ff;
     --r-background--bg: #ffffff;
     --r-raised--bg: #000000;
+    --r-warning--bg: #f59e0b;
 
     /* --------text colors---------- */
     --r-brand--txt: #4f46e5;

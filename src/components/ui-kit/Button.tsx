@@ -1,4 +1,5 @@
 import type { MouseEvent } from "react"
+import { Link } from "react-router-dom"
 
 interface ButtonProps {
     color?: 'brand' | 'raised',
@@ -17,7 +18,7 @@ const Button = ({
     tag = 'button',
     variant = 'fill', 
     content,
-    href,
+    href = '',
     contentClass = '',
     click }: ButtonProps) => {
 
@@ -49,7 +50,7 @@ const Button = ({
     }
 
     if (tag === 'anchor' || href) {
-        return (<a href={href} className={getComponentClass} onClick={(event) => handleButtonClick(event)}>{ content }</a>)
+        return (<Link to={href} className={getComponentClass} onClick={(event) => handleButtonClick(event)}>{ content }</Link>)
     }
 
     return (

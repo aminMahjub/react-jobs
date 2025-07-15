@@ -2,8 +2,12 @@ import JobCard from "./JobCard.tsx";
 import data from '../../../db.json'
 import type { JobItem } from "../../types/type.ts";
 
-const JobSection = () => {
-    const recentJobs = data.jobs.slice(0, 3)
+interface JobSectionProps {
+    jobsLimit?: number
+}
+
+const JobSection = ({ jobsLimit = 3 }: JobSectionProps) => {
+    const recentJobs = data.jobs.slice(0, jobsLimit)
 
     return (
         <section className="bg-blue-50 px-4 py-10">
