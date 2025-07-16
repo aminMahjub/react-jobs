@@ -12,3 +12,8 @@ export interface JobItem {
         contactPhone: string
     }
 }
+
+export interface JobFilters {
+    salary: string
+    type: 'Full-Time' | 'Part-Time' | 'idle'
+}

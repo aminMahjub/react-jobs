@@ -23,7 +23,7 @@ const Header = () => {
     }
 
     return (
-        <header className="flex justify-center items-center bg-brand--bg py-5 px-4 border-b border-b-tertiary--brd">
+        <header className="flex justify-center items-center bg-brand--bg py-5 px-4 border-b border-b-tertiary--brd sticky top-0 z-50">
             <div className="flex justify-between items-center max-w-[1000px] w-full">
                 <NavLink to="/" className="flex items-center gap-x-2">
                     <img src="/logo.png" className="h-10 w-auto" alt="react jobs logo"/>

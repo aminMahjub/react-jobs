@@ -6,7 +6,7 @@ const MainLayout = () => {
         <>
             <Header />
 
-            <main className="w-full h-screen bg-brackground--bg">
+            <main className="w-full h-screen bg-brand-tonal--bg">
                 <Outlet />
             </main>
         </>

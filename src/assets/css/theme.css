@@ -17,4 +17,5 @@
 
     /* --------border colors---------- */
     --color-tertiary--brd: var(--r-tertiary--brd);
+    --color-raised--brd: var(--r-raised--brd);
 }

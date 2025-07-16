@@ -22,8 +22,8 @@ const JobCard = ({ job }: JobCardProps) => {
     }
 
     return (
-        <div className="bg-background--bg rounded-xl shadow-md relative">
-            <div className="p-4">
+        <div className="bg-background--bg p-4 rounded-xl shadow-md relative flex flex-col justify-between">
+            <div className="mb-2">
                 <div className="mb-6">
                     <div className="text-secondary--txt my-2">{ job.type }</div>
                     <h3 className="text-xl font-bold">{ job.title }</h3>
@@ -34,11 +34,13 @@ const JobCard = ({ job }: JobCardProps) => {
                     <Button content={showMoreButtonText} contentClass="!px-1" variant="text" click={() => setShowMore(!showMore)} />
                 </div>
 
-                <h3 className="text-brand--txt mb-2">{job.salary} / Year</h3>
+                <h3 className="text-brand--txt">{job.salary} / Year</h3>
+            </div>
 
+            <div className="self-end w-full">
                 <div className="border border-tertiary--brd mb-5"></div>
 
-                <div className="flex flex-col lg:flex-row justify-between mb-4">
+                <div className="flex flex-col lg:flex-row justify-between">
                     <div className="text-error--txt flex items-center gap-x-1 mb-3">
                         <FaMapMarker className="text-lg" />
 
